@@ -1,6 +1,6 @@
-node_modules
-examples
-test
-package-lock.json
-.babelrc
-.gitignore
+/node_modules
+/examples
+/test
+/package-lock.json
+/.babelrc
+/.gitignore
