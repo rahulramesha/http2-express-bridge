@@ -1,6 +1,6 @@
 {
   "name": "http2-express-bridge",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "wrapper for express app to work with http2 protocol",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -16,7 +16,7 @@
   "keywords": [
     "express",
     "http2",
-    "server push"
+    "server-push"
   ],
   "dependencies": {
     "merge-descriptors": "^1.0.1",
@@ -52,5 +52,13 @@
   },
   "engines": {
     "node": ">= 10.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahulramesha/http2-express-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahulramesha/http2-express-bridge/issues"
+  },
+  "homepage": "https://github.com/rahulramesha/http2-express-bridge#readme"
 }
