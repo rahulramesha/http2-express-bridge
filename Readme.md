@@ -97,3 +97,5 @@ server.listen(3000, () => {
 As seen in the example above, server push can be used. It is built on the belief that server push is a luxury not a necessity. Hence, if the browser does not accept push, or there is an error in the path, It will not crash the application but only throw an error.
 
 On the topic of server push, lots of guidelines have to be followed to have actual performance gains. See [Rules of Thumb for HTTP/2 Push](https://docs.google.com/document/d/1K0NykTXBbbbTlv60t5MyJvXjqKGsCVNYHyLEXIxYMv0/edit?usp=sharing) for the details.
+
+Without this guidelines, pushing files on every request even when the browser has cached the files will result in bad performance. [http2-express-autopush](https://www.npmjs.com/package/http2-express-autopush) is recommended to be used instead of programatically pushing the files. It is an expressjs middleware based on [h2-auto-push](https://www.npmjs.com/package/h2-auto-push). This middleware automatically pushes the files when required. You can learn more about it in the above two links.

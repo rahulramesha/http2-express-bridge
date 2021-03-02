@@ -1,6 +1,6 @@
 {
   "name": "http2-express-bridge",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "wrapper for express app to work with http2 protocol",
   "main": "lib/index.js",
   "module": "lib/index.js",
