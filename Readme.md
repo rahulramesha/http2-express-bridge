@@ -41,7 +41,7 @@ server.listen(3000, () => {
 It will create a http2 server with all the perks of using http2 on supported browsers, but will revert back to Http1.1 on browsers that dont.
 This should work out of the box without any further modification on your existing express application.
 
-No Browser supports http2 without https connection. so the above approach is recommended. However, http2.createServer should also work, as long as https connection is used at the edges like Nginx.
+No Browser supports http2 without https connection. so the above approach is recommended. However, http2.createServer should also work, as long as https connection is used at the edges like HAProxy.
 
 This can also be used as ESModules with 'import' syntax and Typescript (check examples folder).
 
