@@ -1,6 +1,6 @@
 {
   "name": "http2-express-bridge",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "wrapper for express app to work with http2 protocol",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -16,7 +16,13 @@
   "keywords": [
     "express",
     "http2",
-    "server-push"
+    "server-push",
+    "https",
+    "workaround",
+    "fix",
+    "compatibility",
+    "IncomingMessage",
+    "ServerResponse"
   ],
   "dependencies": {
     "merge-descriptors": "^1.0.1",
