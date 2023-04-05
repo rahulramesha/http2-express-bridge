@@ -9,11 +9,10 @@ function initMiddleware (app) {
         res.req = req;
         req.next = next;
 
-        const { socket } = req.httpVersion === '2.0' ?
-                                req.stream.session : req;
+        const alpnProtocol = req?.stream?.session?.alpnProtocol;
 
         //Checking alpnProtocol for http2
-        if (socket.alpnProtocol && (socket.alpnProtocol === 'h2' || socket.alpnProtocol === 'h2c')) {
+        if (alpnProtocol === 'h2' || alpnProtocol === 'h2c') {
             setPrototypeOf(req, app.http2Request)
             setPrototypeOf(res, app.http2Response)
         } else {
